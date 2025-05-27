@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таймери</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Time_Trial.svg/1024px-Time_Trial.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="free-time__box">
+        <p class="free-time" frHour>01</p>
+        <p class="double-dots">:</p>
+        <p class="free-time" frMinute>00</p>
+      </div>
+      <div class="notification__box" ntBox>
+        <p class="notification__text" ntText>Залишилось менше половини часу! Встигніть купити!</p>
+        <a class="notification__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+          <button class="notification__btn" type="button" ntBtn>Купити</button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="bomb__box" bmBox>
+          <p class="bomb-time" bmSec>30</p>
+          <p class="double-dots">:</p>
+          <p class="bomb-time" bmMillisec>00</p>
+        </div>
+        <div class="bomb-btn__box">
+          <button class="bomb__btn" type="button" bmStart>Старт</button>
+          <button class="bomb__btn" type="button" bmStop>Стоп</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./main.js"></script>
+</html>

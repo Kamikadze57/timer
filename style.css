@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: cornsilk;
+  font-family: Arial, sans-serif;
+}
+a,
+button {
+  cursor: pointer;
+}
+header {
+  background-color: rgb(255, 178, 150);
+  padding: 15px 0;
+  display: flex;
+  justify-content: end;
+  border-bottom: 1px solid #212121;
+}
+.free-time__box {
+  display: flex;
+  justify-content: end;
+  margin-right: 60px;
+  font-size: 24px;
+  gap: 3px;
+  background-color: #1f1f1f;
+  padding: 7px 10px;
+  border-radius: 15px;
+  color: greenyellow;
+}
+.notification__box {
+  padding: 20px 10px;
+  background-color: rgb(117, 227, 231);
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -150px);
+  transition: transform 250ms ease-in-out;
+  width: 480px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.notification__text {
+  font-size: 18px;
+  color: #212121;
+}
+.notification__btn {
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #212121;
+  border: 1px solid #212121;
+  background-color: cornsilk;
+  border-radius: 5px;
+}
+.notification__btn:hover {
+  border: 1px solid cornsilk;
+  background-color: #212121;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  background-color: darkgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.bomb__box {
+  display: flex;
+  gap: 3px;
+  background-color: #1f1f1f;
+  color: greenyellow;
+  padding: 5px 10px;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.bomb-btn__box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.bomb__btn {
+  padding: 5px 10px;
+  border: 1px solid #212121;
+  background-color: cornsilk;
+  color: #212121;
+  border-radius: 5px;
+  transition: border 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.bomb__btn:hover {
+  border: 1px solid #000000;
+  background-color: rgb(184, 179, 159);
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0, -5px);
+  }
+  75% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
